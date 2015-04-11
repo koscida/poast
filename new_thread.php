@@ -16,7 +16,8 @@
 
             <div class="column12">
 
-                <div class="new-thread-box">
+                <div class="column3"><br></div>
+                <div class="new-thread-box column6">
 
                     <p class="new-thread-page-title">
                     Start a new thread

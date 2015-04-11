@@ -103,8 +103,8 @@ background: linear-gradient(#30ADBF, #1693A5);
     transition: all 0.4s ease;
 }
 
-.new-thread-button:focus{
-    /*padding: 2px 10px;
+/* .new-thread-button:focus{
+    padding: 2px 10px;
     height: 25px;
     width: auto;
     font-size: 13px;
@@ -157,6 +157,7 @@ h1.subtitle {
     border: 1px solid #1693A5;
     background-color: #e9eaed;
     width: 466px;
+    width: 100%;
 }
 
 .new-thread-create-button{
@@ -166,11 +167,13 @@ h1.subtitle {
 }
 
 .new-thread-text-area{
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 10px;
     -webkit-border-radius: 5px;
     border: 1px solid #1693A5;
     background-color: #e9eaed;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 .new-thread-image {
     height: 16px;
