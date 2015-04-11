@@ -40,10 +40,10 @@
     // test to make sure the db data was pulled correctly
     //echo '<pre>' . print_r($thread, true) . '</pre>';die();
 
-
+    $img =  empty($thread['image_path']) ? false : true;
     ?>
 
-    
+
 
 </head>
 <body>
@@ -52,14 +52,22 @@
 
     <section id="thread_view" class="container12">
 
-        <div class="column2">&nbsp;</div>
-        <div class="column8">
+        <?php
+        // if there is an image, create the image div to the left
+        if($img) {
+        ?>
+            <div class="column4 thread_view_image omega">
+                <img src="<?php echo $thread['image_path']; ?>"/>
+            </div>
+        <?php
+        }
+        ?>
+        <div class="thread_view_content <?php echo ($img) ? 'column8 alpha' : 'column12';?>">
 
             <div class="view_thread">
 
                 <div class="head column12 inner">
                     <h2><?php echo $thread['title']; ?></h2>
-                    <div class="location"><?php echo $thread['created_lat']; ?></div>
                 </div>
 
                 <div class="column11 inner">
