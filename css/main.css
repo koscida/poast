@@ -11,10 +11,12 @@ html, body {
     line-height: 1.5em;
     background-color: #fefccb;
     font-family: Montserrat, helvetica, arial, sans-serif;
-    background-image: url('/images/toastbkg.png');
+    background-image: url('http://i.imgur.com/vuTuAFd.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position-x: 95%;
+    background-position-y: 95%;
+    background-size: 100px;
 }
 
 
