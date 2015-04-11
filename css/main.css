@@ -170,6 +170,7 @@ h1.subtitle {
     background-color: #e9eaed;
     width: 466px;
     width: 100%;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.25);
 }
 
 .new-thread-create-button{
