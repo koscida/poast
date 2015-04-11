@@ -12,7 +12,7 @@
     <!-- <?php include "footer_include.php" ?> -->
 
     <section id="home" class="container12">
-
+        <div class="global-padding"></div>
         <div class="column6" id="static_thread">
             <?php include "partial_static_thread.php" ?>
         </div>
