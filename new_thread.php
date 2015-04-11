@@ -33,9 +33,7 @@
                         <h1 class="subtitle">
                             thread text
                         </h1>
-                        <textarea class="new-thread-text-area" rows="4" cols="50">
-
-                        </textarea>
+                        <textarea class="new-thread-text-area" rows="4" cols="50"></textarea>
 
                         <input class="new-thread-button new-thread-create-button" type="submit" value="create">
                     </form>
