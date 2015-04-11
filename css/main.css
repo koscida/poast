@@ -19,6 +19,9 @@ html, body {
     background-size: 100px;
 }
 
+a {
+    text-decoration: none;
+}
 
 /* ******************************** */
 /*              Header              */
@@ -62,6 +65,9 @@ background: linear-gradient(#30ADBF, #1693A5);
     line-height: .95em;
     text-transform: none;
     text-decoration: none;
+
+    -webkit-text-stroke: 0;
+    color: #fefcfb;
 }
 
 .new-thread-button {
@@ -86,6 +92,11 @@ background: linear-gradient(#30ADBF, #1693A5);
     border: 0;
     color: #30ADBF;
     background: #FEFDFB;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .new-thread-button:hover, .new-thread-button:focus {
@@ -104,12 +115,19 @@ background: linear-gradient(#30ADBF, #1693A5);
     border-radius: 8px;
     -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
     text-decoration: none;*/
-    background: #e9eaed;
+    background: #E6E6E6;
+
 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
+}
+.new-thread-button, .new-thread-button:hover, .new-thread-button:focus {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 /* .new-thread-button:focus{
@@ -182,7 +200,6 @@ h1.subtitle {
     border-style: solid;
     font-size: 14px;
 }
-
 .radius-selector{
     width: 120px;
     font-size: 14px;
@@ -237,24 +254,44 @@ h1.subtitle {
 /*              Generated Threads              */
 /* ******************************************* */
 .thread {
-    border-bottom: 1px solid #1693A5;
-    padding: 10px;
+    border-bottom: 1px solid #99C9D0;
     background: white;
     overflow: hidden;
 }
     .thread:last-child { border-bottom: 0; }
-.thread h2 {
+.thread:hover, .thread:focus {
+    background: #E6E6E6;
+    cursor: pointer;
+}
+    .thread, .thread:hover, .thread:focus {
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+.thread .thread_link {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    margin: 10px;
+}
+.thread .title {
+    font-size: 1.5em;
+    margin: 5px 0;
     display: inline-block;
 }
 .thread .date {
+    float: left;
+    clear: both;
+    color: #777;
+}
+.thread .location {
     display: inline-block;
     font-size: .8em;
     font-style: oblique;
     font-style: italic;
-}
-.thread .location {
-    float: left;
-    clear: both;
+    color: #777;
 }
 .thread .score {
     float: right;
@@ -281,3 +318,64 @@ h1.subtitle {
     background: url("../images/roast.png");
     background-size: 20px 20px;
 }
+
+
+/* ************************************* */
+/*              View Thread              */
+/* ************************************* */
+.view_thread {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: hidden;
+}
+.view_thread h2 {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.view_thread .location {
+    display: inline-block;
+    font-size: .8em;
+    font-style: oblique;
+    font-style: italic;
+    margin-left: 5px;
+    color: #777;
+}
+.view_thread .text {
+    margin-bottom: 10px;
+}
+.view_score {
+    float: right;
+}
+.view_score .score_num {
+    text-align: center;
+    margin: 5px 0;
+}
+.view_score .score_num, .view_score .score_toasts, .view_score .score_roasts {
+    display: block;
+}
+.view_score .score_toasts, .view_score .score_roasts {
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+}
+.view_thread .date, .author {
+    font-size: .9em;
+    color: #777;
+}
+.view_thread .date {
+    float: left;
+}
+.view_thread .author {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
