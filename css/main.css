@@ -46,7 +46,9 @@ background: linear-gradient(#30ADBF, #1693A5);
     font-weight: 900;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #30ADBF;
-    color: #EBDFD8;
+    color: #fefccb;
+
+    /* ****** old logo color #EBDFD8 ***** */
 
     text-shadow: 1px 1px 5px rgba(0,0,0,.25);
     margin-top: -12px;
