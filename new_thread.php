@@ -26,12 +26,12 @@
 
                     <form class="new-thread-form">
                         <h1 class="subtitle">
-                            Title
+                            title
                         </h1>
                         <input class="new-thread-title-field" type="text" name="firstname">
                         <br><br>
                         <h1 class="subtitle">
-                            Message
+                            message
                         </h1>
                         <textarea class="new-thread-text-area" rows="4" cols="50"></textarea>
 
