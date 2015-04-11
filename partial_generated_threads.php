@@ -23,5 +23,12 @@ $result->free();
 // test to make sure the db data was pulled correctly
 echo '<pre>' . print_r($all_posts, true) . '</pre>';
 
+?>
+
+<div class="container12">
+
+    <div class=""
+
+</div>
 
 
