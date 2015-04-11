@@ -12,7 +12,7 @@
 
 
     <section id="home">
-        
+
         <div id="static_thread">
             <?php include "partial_static_thread.php" ?>
         </div>

@@ -1,16 +1,22 @@
+@font-face {
+    font-family: playtone;
+    src: url(../media/PaytoneOne.ttf);
+}
+
+/* ******************************** */
+/*              Layout              */
+/* ******************************** */
 html {
     font-size: 16px;
     line-height: 1.5em;
     background-color: #FEFDFB;
 }
 
-@font-face {
-    font-family: playtone;
-    src: url(../media/PaytoneOne.ttf);
-}
 
+/* ******************************** */
+/*              Header              */
+/* ******************************** */
 .header-container {
-
     height: 84px;
 }
 
@@ -30,7 +36,6 @@ html {
 
 /* old liner header background colors
 background: linear-gradient(#30ADBF, #1693A5);
-
 */
 
 .logo {
@@ -49,26 +54,31 @@ background: linear-gradient(#30ADBF, #1693A5);
 }
 
 .new-thread-button {
-    padding: 2px 10px;
-    height: 25px;
-    width: auto;
     font-size: 13px;
     text-transform: uppercase;
+    text-decoration: none;
     float: right;
-    margin-top: 22px;
     margin-right: 2%;
+    margin-top: 20px;
+    /*padding: 2px 10px;
+    height: 25px;
+    width: auto;
     border-style: solid;
     border-color: #EBDFD8;
     color: #EBDFD8;
     border-width: 2px;
     border-radius: 8px;
     -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
-    text-decoration: none;
-    background: linear-gradient(#30ADBF, #1693A5);
+    background: linear-gradient(#30ADBF, #1693A5);*/
+    padding: 4px 14px;
+    border-radius: 6px;
+    border: 0;
+    color: #30ADBF;
+    background: linear-gradient(#FEFDFB, #EEEDEB);
 }
 
 .new-thread-button:hover{
-    padding: 2px 10px;
+    /*padding: 2px 10px;
     height: 25px;
     width: auto;
     font-size: 13px;
@@ -82,12 +92,12 @@ background: linear-gradient(#30ADBF, #1693A5);
     border-width: 2px;
     border-radius: 8px;
     -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
-    text-decoration: none;
-
+    text-decoration: none;*/
+    background: linear-gradient(#EEEDEB, #FEFDFB);
 }
 
 .new-thread-button:focus{
-    padding: 2px 10px;
+    /*padding: 2px 10px;
     height: 25px;
     width: auto;
     font-size: 13px;
@@ -101,8 +111,8 @@ background: linear-gradient(#30ADBF, #1693A5);
     border-width: 2px;
     border-radius: 8px;
     -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
-    text-decoration: none;
-
+    text-decoration: none;*/
+    background: linear-gradient(#EEEDEB, #FEFDFB);
 }
 
 .new-thread-image {
@@ -111,9 +121,9 @@ background: linear-gradient(#30ADBF, #1693A5);
 }
 
 
-/*
-    css for the generated threads
-*/
+/* ******************************************* */
+/*              Generated Threads              */
+/* ******************************************* */
 .thread {
     border-bottom: 1px solid #1693A5;
 }
