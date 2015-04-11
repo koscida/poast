@@ -1,4 +1,6 @@
 <!-- Top header/navigation bar -->
 <header>
-    <p> test </p>
+    <div class="header">
+        <p> test</p>
+    </div>
 </header>
