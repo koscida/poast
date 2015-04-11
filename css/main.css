@@ -363,11 +363,29 @@ h1.subtitle {
 /* ************************************* */
 /*              View Thread              */
 /* ************************************* */
+.thread_view_image {
+    background: rgba(0, 0, 0, .7);
+    padding: 20px 25px 20px 20px;
+    border-radius: 5px;
+}
+.thread_view_content {
+    background: white;
+    border-radius: 5px;
+}
+.thread_view_image + .thread_view_content {
+    margin-left: -5px;
+}
+
+.thread_view_image .image {
+    width: 100%;
+}
+
 .view_thread {
     background: white;
     border-radius: 5px;
     padding: 20px;
     overflow: hidden;
+    border-bottom: 1px solid #99C9D0;
 }
 .view_thread h2 {
     margin-bottom: 10px;
