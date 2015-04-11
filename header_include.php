@@ -5,7 +5,7 @@
         <a href="new_thread.php" class="new-thread-button"
            title="create a thread">create a thread</a>
 
-        <p class="logo"> poast.io</p>
+        <a href="index.php" class="logo">poast.io</a>
 
     </div>
 </header>
