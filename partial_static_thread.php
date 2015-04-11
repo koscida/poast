@@ -58,8 +58,6 @@ foreach($all_posts as $key => $thread) {
                     echo $s; ?>
                 </span>
 
-                <span class="clear"></span>
-
                 <div class="column1 inner">
                     <div class="view_score">
                         <span class="score_toasts"></span>
@@ -67,6 +65,10 @@ foreach($all_posts as $key => $thread) {
                         <span class="score_roasts"></span>
                     </div>
                 </div>
+
+                <span class="clear"></span>
+
+
 
                 <span class="date"><?php echo time_ago($thread['create_date']); ?></span>
 
