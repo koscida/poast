@@ -227,7 +227,7 @@ h1.subtitle {
 
 .fiftypadding {
     height: 50px;
-    width" 100%;
+    width: 100%;
 }
 
 .staticfeed {
@@ -236,6 +236,28 @@ h1.subtitle {
 
 .dynamicfeed{
     float: right;
+}
+
+.profilepane {
+    height-min: 100px;
+    background-color: white;
+    min-height: 450px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.profile_header {
+    background: #30ADBF;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+    font-size: 1.1em;
+    background: -webkit-linear-gradient(#4AC7D9, #1693A5);
+    background: -o-linear-gradient(#4AC7D9, #1693A5);
+    background: -moz-linear-gradient(#4AC7D9, #1693A5);
+    background: linear-gradient(#4AC7D9, #1693A5);
+    -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
 }
 
 

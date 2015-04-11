@@ -1,7 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Brett Bloethner
- * Date: 4/11/2015
- * Time: 5:13 PM
- */
+<div class="profile_header column12 outer">
+    <p>profile</p>
+</div>
+
+<div class=" column12 outer profilepane">
+    <p> test</p>
+    </div>
