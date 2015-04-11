@@ -204,6 +204,14 @@ h1.subtitle {
     color: white;
     font-size: 1.5em;
 }
+.threads_load_more {
+    background: #eee;
+}
+.threads_load_more .load {
+    width: 80px;
+    margin: 10px auto;
+    display: block;
+}
 
 
 /* **************************************** */
@@ -219,22 +227,38 @@ h1.subtitle {
     border-bottom: 1px solid #1693A5;
     padding: 10px;
     background: white;
+    overflow: hidden;
 }
     .thread:last-child { border-bottom: 0; }
-.score {
-    text-algn: center;
+.thread h2 {
+    display: inline-block;
+}
+.thread .date {
+    display: inline-block;
+    font-size: .8em;
+    font-style: oblique;
+    font-style: italic;
+}
+.thread .location {
+    float: left;
+    clear: both;
+}
+.thread .score {
+    float: right;
+    text-align: center;
+    height: 20px;
 }
 .score_toasts, .score_roasts, .score_num {
-    display: block;
+    display: inline-block;
 }
 .score_toasts, .score_roasts {
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
-    margin: 0 auto;
 }
 .score_num {
-    text-align: center;
+    margin: 0 10px;
+    line-height: 20px;
 }
 .score_toasts {
     background: url("../images/toast.png");
