@@ -30,30 +30,10 @@ $result->free();
  */
 function time_ago ($oldTime, $timeType = "h") {
     $newTime = date('Y-m-d h:i:s', time());
+    $timeType = "h";
+
     $timeCalc = strtotime($newTime) - strtotime($oldTime);
-    if ($timeType == "x") {
-        if ($timeCalc = 60) {
-            $timeType = "m";
-        }
-            if ($timeCalc = (60*60)) {
-            $timeType = "h";
-        }
-            if ($timeCalc = (60*60*24)) {
-            $timeType = "d";
-        }
-        }
-    if ($timeType == "s") {
-        $timeCalc .= " seconds ago";
-    }
-    if ($timeType == "m") {
-        $timeCalc = round($timeCalc/60) . " minutes ago";
-    }
-    if ($timeType == "h") {
-        $timeCalc = round($timeCalc/60/60) . " hours ago";
-    }
-    if ($timeType == "d") {
-        $timeCalc = round($timeCalc/60/60/24) . " days ago";
-    }
+    $timeCalc = round($timeCalc/60/60) . " hours ago";
     return $timeCalc;
 }
 /*
@@ -70,10 +50,10 @@ function time_ago ($oldTime, $timeType = "h") {
     ?>
 
         <div class="thread column12">
-            <div class="column2">
-                <span class="num_toasts"></span>
-                <span class="score"><?php echo ($thread['num_toasts'] - $thread['num_roasts']); ?></span>
-                <span class="num_roasts"></span>
+            <div class="column1 score">
+                <span class="score_toasts"></span>
+                <span class="score_num"><?php echo ($thread['num_toasts'] - $thread['num_roasts']); ?></span>
+                <span class="score_roasts"></span>
             </div>
             <div class="column10">
                 <h2><a href""><?php echo $thread['title']; ?></a></h2>

@@ -1,3 +1,8 @@
+html {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
 @font-face {
     font-family: playtone;
     src: url(../media/PaytoneOne.ttf);
@@ -41,4 +46,29 @@
 /*
     css for the generated threads
 */
-
+.thread {
+    border-bottom: 1px solid #1693A5;
+}
+.score {
+    text-algn: center;
+}
+.score_toasts, .score_roasts, .score_num {
+    display: block;
+}
+.score_toasts, .score_roasts {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.score_num {
+    text-align: center;
+}
+.score_toasts {
+    background: url("../images/toast.png");
+    background-size: 20px 20px;
+}
+.score_roasts {
+    background: url("../images/roast.png");
+    background-size: 20px 20px;
+}
