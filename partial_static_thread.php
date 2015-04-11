@@ -49,13 +49,14 @@ foreach($all_posts as $key => $thread) {
 
                 <span class="clear"></span>
 
-                <span class="text">
+                <span class="column11 text">
                     <?php
                     if(strlen($thread['text']) > 150)
                         $s = substr($thread['text'], 0, 150) . "...";
                     else
                         $s = $thread['text'];
                     echo $s; ?>
+                    &nbsp;
                 </span>
 
                 <div class="column1 inner">
@@ -67,7 +68,6 @@ foreach($all_posts as $key => $thread) {
                 </div>
 
                 <span class="clear"></span>
-
 
 
                 <span class="date"><?php echo time_ago($thread['create_date']); ?></span>
