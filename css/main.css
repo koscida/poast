@@ -19,6 +19,9 @@ html, body {
     background-size: 100px;
 }
 
+a {
+    text-decoration: none;
+}
 
 /* ******************************** */
 /*              Header              */
@@ -86,6 +89,11 @@ background: linear-gradient(#30ADBF, #1693A5);
     border: 0;
     color: #30ADBF;
     background: #FEFDFB;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .new-thread-button:hover, .new-thread-button:focus {
@@ -105,11 +113,12 @@ background: linear-gradient(#30ADBF, #1693A5);
     -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
     text-decoration: none;*/
     background: #E6E6E6;
-
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+}
+.new-thread-button, .new-thread-button:hover, .new-thread-button:focus {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 /* .new-thread-button:focus{
@@ -229,12 +238,30 @@ h1.subtitle {
 /* ******************************************* */
 .thread {
     border-bottom: 1px solid #1693A5;
-    padding: 10px;
     background: white;
     overflow: hidden;
 }
     .thread:last-child { border-bottom: 0; }
-.thread h2 {
+.thread:hover, .thread:focus {
+    background: #E6E6E6;
+    cursor: pointer;
+}
+    .thread, .thread:hover, .thread:focus {
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+.thread .thread_link {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    margin: 10px;
+}
+.thread .title {
+    font-size: 1.5em;
+    margin: 5px 0;
     display: inline-block;
 }
 .thread .date {

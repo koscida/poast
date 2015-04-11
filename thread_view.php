@@ -11,7 +11,7 @@
     <?php include "header_include.php" ?>
 
     <section id="thread_view">
-
+        
     </section>
 
 </body>
