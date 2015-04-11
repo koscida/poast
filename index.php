@@ -13,10 +13,10 @@
 
     <section id="home" class="container12">
         <div class="thirtypadding"></div>
-        <div class="column6" profile" id="profile">
+        <div class="column5 home-profile-module" id="profile">
             <?php include "home_profile_module.php" ?>
         </div>
-        <div class="column6 staticfeed" id="static_thread">
+        <div class="column7 staticfeed" id="static_thread">
             <?php include "partial_static_thread.php" ?>
         </div>
         <br>
