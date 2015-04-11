@@ -11,6 +11,10 @@ html, body {
     line-height: 1.5em;
     background-color: #fefccb;
     font-family: Montserrat, helvetica, arial, sans-serif;
+    background-image: url('/images/toastbkg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 
