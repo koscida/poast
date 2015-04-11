@@ -51,24 +51,15 @@ background: linear-gradient(#30ADBF, #1693A5);
 
 .logo {
     font-family: 'playtone', sans-serif;
-    font-size: 75px;
-
-    font-weight: 900;
-    -webkit-text-stroke-width: 0px;
-    -webkit-text-stroke-color: #30ADBF;
-    color: #ffffff;
-
+    font-size: 55px;
     /* ****** old logo color #EBDFD8 ***** */
 
     text-shadow: 1px 1px 5px rgba(0,0,0,.25);
-    margin-top: -12px;
-    margin-left: 4%;
     line-height: .95em;
     text-transform: none;
     text-decoration: none;
-
-    -webkit-text-stroke: 0;
     color: #fefcfb;
+    display: inline-block;
 }
 
 .new-thread-button {
