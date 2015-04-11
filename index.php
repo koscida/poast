@@ -3,14 +3,12 @@
 <head>
 
     <title>Poast | Home</title>
-    <?php include "header_include.php" ?>
+    <?php include "file_include.php" ?>
 
 </head>
 <body>
 
-    <header> 
-
-    </header>
+    <?php include "header_include.php" ?>
 
     <section id="home">
         <div id="static_thread">

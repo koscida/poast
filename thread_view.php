@@ -3,14 +3,12 @@
 <head>
 
     <title>Poast | Thread View</title>
-    <?php include "header_include.php" ?>
+    <?php include "file_include.php" ?>
 
 </head>
 <body>
 
-    <header>
-
-    </header>
+    <?php include "header_include.php" ?>
 
     <section id="thread_view">
 
