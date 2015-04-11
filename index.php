@@ -11,13 +11,13 @@
     <?php include "header_include.php" ?>
 
 
-    <section id="home">
+    <section id="home" class="container12">
 
-        <div id="static_thread">
+        <div class="column6" id="static_thread">
             <?php include "partial_static_thread.php" ?>
         </div>
 
-        <div id="generated_thread">
+        <div class="column6" id="generated_thread">
             <?php include "partial_generated_threads.php" ?>
         </div>
 

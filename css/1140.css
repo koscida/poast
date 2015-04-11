@@ -58,20 +58,20 @@ figure img
 
 .container12 .alpha, .container16 .alpha { margin-left: 0; }
 .container12 .omega, .container16 .omega { margin-right: 0; }
-.container12 .outer, .container16 .outer { margin-right: 0; margin-left: 0; }
+.container12 .outer, .container16 .outer, .container12 .inner, .container16 .inner { margin-right: 0; margin-left: 0; }
 
-.container12 .column1  { width:  6.33333%; }	.container12 .column1.alpha,  .container12 .column1.omega  { width:  7.33333%; }
-.container12 .column2  { width: 14.66667%; }	.container12 .column2.alpha,  .container12 .column2.omega  { width: 15.66667%; }
-.container12 .column3  { width: 23.00000%; }	.container12 .column3.alpha,  .container12 .column3.omega  { width: 24.00000%; }
-.container12 .column4  { width: 31.33333%; }	.container12 .column4.alpha,  .container12 .column4.omega  { width: 32.33333%; }
-.container12 .column5  { width: 39.66667%; }	.container12 .column5.alpha,  .container12 .column5.omega  { width: 40.66667%; }
-.container12 .column6  { width: 48.00000%; }	.container12 .column6.alpha,  .container12 .column6.omega  { width: 49.00000%; }
-.container12 .column7  { width: 56.33333%; }	.container12 .column7.alpha,  .container12 .column7.omega  { width: 57.33333%; }
-.container12 .column8  { width: 64.66667%; }	.container12 .column8.alpha,  .container12 .column8.omega  { width: 65.66667%; }
-.container12 .column9  { width: 73.00000%; }	.container12 .column9.alpha,  .container12 .column9.omega  { width: 74.00000%; }
-.container12 .column10 { width: 81.33333%; }	.container12 .column10.alpha, .container12 .column10.omega { width: 82.33333%; }
-.container12 .column11 { width: 89.66667%; }	.container12 .column11.alpha, .container12 .column11.omega { width: 90.66667%; }
-.container12 .column12 { width: 98.00000%; }	.container12 .column12.alpha, .container12 .column12.omega { width: 99.00000%; }
+.container12 .column1  { width:  6.33333%; }	.container12 .column1.alpha,  .container12 .column1.omega  { width:  7.33333%; }	.container12 .column1.inner,  .container12 .column1.outer  { width:  8.33333%; }
+.container12 .column2  { width: 14.66667%; }	.container12 .column2.alpha,  .container12 .column2.omega  { width: 15.66667%; }    .container12 .column2.inner,  .container12 .column2.outer  { width: 16.66667%; }
+.container12 .column3  { width: 23.00000%; }	.container12 .column3.alpha,  .container12 .column3.omega  { width: 24.00000%; }    .container12 .column3.inner,  .container12 .column3.outer  { width: 25.00000% }
+.container12 .column4  { width: 31.33333%; }	.container12 .column4.alpha,  .container12 .column4.omega  { width: 32.33333%; }    .container12 .column4.inner,  .container12 .column4.outer  { width: 33.33333%; }
+.container12 .column5  { width: 39.66667%; }	.container12 .column5.alpha,  .container12 .column5.omega  { width: 40.66667%; }    .container12 .column5.inner,  .container12 .column5.outer  { width: 41.66667%; }
+.container12 .column6  { width: 48.00000%; }	.container12 .column6.alpha,  .container12 .column6.omega  { width: 49.00000%; }    .container12 .column6.inner,  .container12 .column6.outer  { width: 50.00000%; }
+.container12 .column7  { width: 56.33333%; }	.container12 .column7.alpha,  .container12 .column7.omega  { width: 57.33333%; }    .container12 .column7.inner,  .container12 .column7.outer  { width: 58.33333%; }
+.container12 .column8  { width: 64.66667%; }	.container12 .column8.alpha,  .container12 .column8.omega  { width: 65.66667%; }    .container12 .column8.inner,  .container12 .column8.outer  { width: 66.66667%; }
+.container12 .column9  { width: 73.00000%; }	.container12 .column9.alpha,  .container12 .column9.omega  { width: 74.00000%; }    .container12 .column9.inner,  .container12 .column9.outer  { width: 75.00000%; }
+.container12 .column10 { width: 81.33333%; }	.container12 .column10.alpha, .container12 .column10.omega { width: 82.33333%; }    .container12 .column10.inner, .container12 .column10.outer { width: 83.33333%; }
+.container12 .column11 { width: 89.66667%; }	.container12 .column11.alpha, .container12 .column11.omega { width: 90.66667%; }    .container12 .column11.inner, .container12 .column11.outer { width: 91.66667%; }
+.container12 .column12 { width: 98.00000%; }	.container12 .column12.alpha, .container12 .column12.omega { width: 99.00000%; }    .container12 .column12.inner, .container12 .column12.outer { width: 100.00000%; }
 .container12 .prefix1  { padding-left:   8.33333%; }
 .container12 .prefix2  { padding-left:  16.66667%; }
 .container12 .prefix3  { padding-left:  25.00000%; }
