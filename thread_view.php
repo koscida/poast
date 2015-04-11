@@ -62,7 +62,7 @@
         <?php
         }
         ?>
-        <div class="column8 thread_view_content <?php echo ($img) ? 'alpha' : '';?>">
+        <div class="thread_view_content <?php echo ($img) ? 'column8 alpha' : 'column12';?>">
 
             <div class="view_thread">
 
