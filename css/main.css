@@ -3,8 +3,13 @@
     src: url(../media/PaytoneOne.ttf);
 }
 
+.header-container {
+
+    height: 84px;
+}
+
 .header {
-    height: 50px;
+    height: 63px;
     width: 100%;
     background: -webkit-linear-gradient(#ACCC08, #98B210);
     background: -o-linear-gradient(#ACCC08, #98B210);
@@ -27,7 +32,7 @@
     color: #EBDFD8;
 
     text-shadow: 1px 1px 5px rgba(0,0,0,.25);
-    margin-top: -10;
+    margin-top: -10px;
 
 }
 
