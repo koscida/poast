@@ -17,9 +17,9 @@ html {
 .header {
     height: 63px;
     width: 100%;
-    background: -webkit-linear-gradient(#ACCC08, #98B210);
-    background: -o-linear-gradient(#ACCC08, #98B210);
-    background: -moz-linear-gradient(#ACCC08, #98B210);
+    background: -webkit-linear-gradient(#4AC7D9, #1693A5);
+    background: -o-linear-gradient(#4AC7D9, #1693A5);
+    background: -moz-linear-gradient(#4AC7D9, #1693A5);
     background: linear-gradient(#4AC7D9, #1693A5);
     border-color: #98B210;
     border-radius: 0;
