@@ -177,6 +177,10 @@ h1.subtitle {
     float: left;
     margin-bottom: 20px;
     font-family: 'montserrat';
+    border-width: 2px;
+    border-color: #30ADBF;
+    border-style: solid;
+    font-size: 14px;
 }
 
 .new-thread-text-area{
