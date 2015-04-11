@@ -62,11 +62,13 @@ foreach($all_posts as $key => $thread) {
 
                 <span class="date"><?php echo time_ago($thread['create_date']); ?></span>
 
-                <span class="score">
-                    <span class="score_toasts"></span>
-                    <span class="score_num"><?php echo ($thread['num_toasts'] - $thread['num_roasts']); ?></span>
-                    <span class="score_roasts"></span>
-                </span>
+                <div class="column1 inner">
+                    <div class="view_score">
+                        <span class="score_toasts"></span>
+                        <span class="score_num"><?php echo ($thread['num_toasts'] - $thread['num_roasts']); ?></span>
+                        <span class="score_roasts"></span>
+                    </div>
+                </div>
             </div>
 
         </a>
