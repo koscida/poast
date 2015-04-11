@@ -19,9 +19,6 @@ html, body {
     background-size: 100px;
 }
 
-a {
-    text-decoration: none;
-}
 
 /* ******************************** */
 /*              Header              */
@@ -53,8 +50,8 @@ background: linear-gradient(#30ADBF, #1693A5);
     font-size: 75px;
 
     font-weight: 900;
-    /*-webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #30ADBF;*/
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #30ADBF;
     color: #fefccb;
 
     /* ****** old logo color #EBDFD8 ***** */
@@ -89,11 +86,6 @@ background: linear-gradient(#30ADBF, #1693A5);
     border: 0;
     color: #30ADBF;
     background: #FEFDFB;
-
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
 }
 
 .new-thread-button:hover, .new-thread-button:focus {
@@ -112,13 +104,12 @@ background: linear-gradient(#30ADBF, #1693A5);
     border-radius: 8px;
     -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
     text-decoration: none;*/
-    background: #E6E6E6;
-}
-.new-thread-button, .new-thread-button:hover, .new-thread-button:focus {
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    background: #e9eaed;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 /* .new-thread-button:focus{
@@ -192,6 +183,15 @@ h1.subtitle {
     font-size: 14px;
 }
 
+.radius-selector{
+    width: 120px;
+    font-size: 14px;
+    padding: 8px 10px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #1693A5;
+    background-color: #e9eaed;
+    font-family: 'Montserrat', sans-serif;
+}
 .new-thread-text-area{
     font-size: 14px;
     padding: 8px 10px;
@@ -238,30 +238,12 @@ h1.subtitle {
 /* ******************************************* */
 .thread {
     border-bottom: 1px solid #1693A5;
+    padding: 10px;
     background: white;
     overflow: hidden;
 }
     .thread:last-child { border-bottom: 0; }
-.thread:hover, .thread:focus {
-    background: #E6E6E6;
-    cursor: pointer;
-}
-    .thread, .thread:hover, .thread:focus {
-        -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        transition: all 0.2s ease;
-    }
-.thread .thread_link {
-    color: #333;
-    text-decoration: none;
-    display: block;
-    overflow: hidden;
-    margin: 10px;
-}
-.thread .title {
-    font-size: 1.5em;
-    margin: 5px 0;
+.thread h2 {
     display: inline-block;
 }
 .thread .date {

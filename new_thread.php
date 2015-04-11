@@ -34,7 +34,16 @@
                             message
                         </h1>
                         <textarea class="new-thread-text-area" rows="4" cols="50"></textarea>
-
+                        <br>
+                        <h1 class="subtitle">
+                            thread radius
+                        </h1>
+                        <select class="radius-selector">
+                            <option value=".5 miles">.5 miles</option>
+                            <option value="3 miles">3 mile</option>
+                            <option value="5 miles">5 miles</option>
+                        </select>
+                        <br>
                         <input class="new-thread-button new-thread-create-button" type="submit" value="create">
                     </form>
 
