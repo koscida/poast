@@ -230,6 +230,16 @@ h1.subtitle {
     width" 100%;
 }
 
+.staticfeed {
+    float: right;
+}
+
+.dynamicfeed{
+    float: right;
+}
+
+
+
 /* ******************************************* */
 /*              Threads - General              */
 /* ******************************************* */
