@@ -49,13 +49,14 @@ foreach($all_posts as $key => $thread) {
 
                 <span class="clear"></span>
 
-                <span class="text">
+                <span class="column11 text">
                     <?php
                     if(strlen($thread['text']) > 150)
                         $s = substr($thread['text'], 0, 150) . "...";
                     else
                         $s = $thread['text'];
                     echo $s; ?>
+                    &nbsp;
                 </span>
 
                 <div class="column1 inner">
