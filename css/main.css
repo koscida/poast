@@ -57,6 +57,8 @@ background: linear-gradient(#30ADBF, #1693A5);
     margin-top: -12px;
     margin-left: 4%;
     line-height: 1.3em;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .new-thread-button {
