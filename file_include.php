@@ -12,3 +12,10 @@
 
 <!-- Add JS files -->
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+
+
+<?php
+include "db.php";
+include "helper_functions.php";
+?>

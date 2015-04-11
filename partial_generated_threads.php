@@ -1,8 +1,5 @@
 <?php
 
-include "db.php";
-include "helper_functions.php";
-
 // get the database
 $db;
 $db_obj = new database();
@@ -33,21 +30,45 @@ $result->free();
 <?php
 foreach($all_posts as $key => $thread) {
 ?>
-    <div class="thread column12 outer">
+    <div class="single_thread column12 outer">
         <a class="thread_link" href="thread_view.php?id=<?php echo $thread['id']; ?>">
 
-            <span class="title"><?php echo $thread['title']; ?></span> &nbsp;
-            <span class="location"><?php echo $thread['created_lat']; ?></span>
+            <?php
+            $img = false;
+            if(!empty($thread['image_path'])) {
+                $img = true;
+                ?>
+                <div class="image">
+                    <img src="<?php echo $thread['image_path']; ?>" />
+                </div>
+            <?php }  ?>
 
-            <span class="clear"></span>
 
-            <span class="date"><?php echo time_ago($thread['create_date']); ?></span>
+            <div class="description <?php echo ($img) ? 'img_present' : ''; ?>">
+                <span class="title"><?php echo $thread['title']; ?></span> &nbsp;
+                <span class="location"><?php echo $thread['created_lat']; ?></span>
 
-            <span class="score">
-                <span class="score_toasts"></span>
-                <span class="score_num"><?php echo ($thread['num_toasts'] - $thread['num_roasts']); ?></span>
-                <span class="score_roasts"></span>
-            </span>
+                <span class="clear"></span>
+
+                <span class="text">
+                    <?php
+                        if(strlen($thread['text']) > 150)
+                            $s = substr($thread['text'], 0, 150) . "...";
+                        else
+                            $s = $thread['text'];
+                    echo $s; ?>
+                </span>
+
+                <span class="clear"></span>
+
+                <span class="date"><?php echo time_ago($thread['create_date']); ?></span>
+
+                <span class="score">
+                    <span class="score_toasts"></span>
+                    <span class="score_num"><?php echo ($thread['num_toasts'] - $thread['num_roasts']); ?></span>
+                    <span class="score_roasts"></span>
+                </span>
+            </div>
 
         </a>
     </div>

@@ -36,7 +36,8 @@ figure img
     margin: 0 auto;
     padding: 0;
     position: relative;
-    width: 1140px;
+    width: 90%;
+    max-width: 1300px;
 }
 .row { margin-bottom: 20px; }
 .column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .column10, .column11, .column12, .column13, .column14, .column15, .column16 {

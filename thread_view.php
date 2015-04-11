@@ -7,9 +7,6 @@ if(array_key_exists("id", $_GET)) {
 
 
 
-// good things
-include "db.php";
-include "helper_functions.php";
 
 // get the database
 $db;

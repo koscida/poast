@@ -14,7 +14,7 @@ html, body {
     background-image: url('../images/toastbkg.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x: 95%;
+    background-position-x: 98%;
     background-position-y: 95%;
     background-size: 100px;
 }
@@ -245,47 +245,70 @@ h1.subtitle {
 /* ******************************************* */
 /*              Generated Threads              */
 /* ******************************************* */
-.thread {
+.single_thread {
     border-bottom: 1px solid #99C9D0;
     background: white;
     overflow: hidden;
+    position: relative;
+    min-height: 100px;
 }
-    .thread:last-child { border-bottom: 0; }
-.thread:hover, .thread:focus {
+    .single_thread:last-child { border-bottom: 0; }
+.single_thread:hover, .single_thread:focus {
     background: #E6E6E6;
     cursor: pointer;
 }
-    .thread, .thread:hover, .thread:focus {
+    .single_thread, .single_thread:hover, .single_thread:focus {
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
-.thread .thread_link {
+.single_thread .thread_link {
     color: #333;
     text-decoration: none;
     display: block;
     overflow: hidden;
     margin: 10px;
 }
-.thread .title {
+.single_thread .image {
+    float: left;
+    display: inline-block;
+    position: absolute;
+}
+    .single_thread .image,  .single_thread .image img {
+        width: 80px;
+        height: 80px;
+    }
+.single_thread .description {
+    float: left;
+    display: inline-block;
+    width: 100%;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+    .single_thread .description.img_present { padding-left: 90px; }
+.single_thread .title {
     font-size: 1.5em;
     margin: 5px 0;
     display: inline-block;
+    font-weight: bold;
 }
-.thread .date {
+.single_thread .date, .single_thread .location {
+    color: #777;
+    font-size: .8em;
+}
+.single_thread .date {
     float: left;
     clear: both;
-    color: #777;
 }
-.thread .location {
+.single_thread .location {
     display: inline-block;
-    font-size: .8em;
     font-style: oblique;
     font-style: italic;
-    color: #777;
 }
-.thread .score {
+.single_thread .score {
     float: right;
     text-align: center;
     height: 20px;
