@@ -9,7 +9,7 @@
 <body>
 
     <?php include "header_include.php" ?>
-    <?php include "footer_include.php" ?>
+    <!-- <?php include "footer_include.php" ?> -->
 
     <section id="home" class="container12">
 
