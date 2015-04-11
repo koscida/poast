@@ -1,6 +1,6 @@
 <!-- Top header/navigation bar -->
 <header>
     <div class="header">
-        <p> test3</p>
+        <p> final test</p>
     </div>
 </header>
