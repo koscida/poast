@@ -2,7 +2,7 @@
 <header>
     <div class="header">
 
-        <p> test</p>
+        <p class="logo"> poast.io</p>
 
     </div>
 </header>

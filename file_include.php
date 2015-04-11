@@ -7,5 +7,8 @@
 <link href="css/1140.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
 
+<!-- Add font stylesheet -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
 <!-- Add JS files -->
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
