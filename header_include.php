@@ -4,5 +4,7 @@
 
         <p class="logo"> poast.io</p>
 
+        <a href="https://buffalobookexchange.com/oc-panel/auth/register" class="new-thread-button" data-original-title="" title="">SIGN UP</a>
+
     </div>
 </header>
