@@ -105,6 +105,26 @@ background: linear-gradient(#30ADBF, #1693A5);
 
 }
 
+/* *************************************** */
+/*    new thread page styling              */
+/* *************************************** */
+
+.new-thread-box {
+    background-color: #EBDFD8;
+    display: inline-block;
+}
+
+.new-thread-form {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+h1.subtitle {
+    font-family: 'montserrat';
+    font-size: 22px;
+}
+
 .new-thread-image {
     height: 16px;
     width: 16px;
