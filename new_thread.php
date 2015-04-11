@@ -36,7 +36,7 @@
                         <textarea class="new-thread-text-area" rows="4" cols="50"></textarea>
                         <br>
                         <h1 class="subtitle">
-                            thread radius
+                            reach
                         </h1>
                         <select class="radius-selector">
                             <option value=".5 miles">.5 miles</option>
