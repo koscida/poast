@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <title>Poast | New Thread</title>
+    <title>Poast | Thread View</title>
     <?php include "header_include.php" ?>
 
 </head>
@@ -12,7 +12,7 @@
 
     </header>
 
-    <section id="new_thread">
+    <section id="thread_view">
 
     </section>
 
