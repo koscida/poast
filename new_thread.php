@@ -10,6 +10,8 @@
 
     <?php include "header_include.php" ?>
 
+
+
     <section id="new_thread">
 
     </section>
