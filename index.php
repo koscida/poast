@@ -12,18 +12,18 @@
     <!-- <?php include "footer_include.php" ?> -->
 
     <section id="home" class="container12">
-        <div class="global-padding"></div>
-        <div class="column6" id="static_thread">
+        <div class="thirtypadding"></div>
+        <div class="column7" id="static_thread">
             <?php include "partial_static_thread.php" ?>
         </div>
-
+        <br>
         <div class="column6" id="generated_thread">
             <?php include "partial_generated_threads.php" ?>
         </div>
 
     </section>
-
-
-
+    <div class="fiftypadding"></div>
+    <div class="fiftypadding"></div>
+    <div class="fiftypadding"></div>
 </body>
 </html>

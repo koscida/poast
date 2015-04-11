@@ -220,9 +220,14 @@ h1.subtitle {
 /*              Home Index Page Styling        */
 /* ******************************************* */
 
-.global-padding {
+.thirtypadding {
     height: 30px;
     width: 100%;
+}
+
+.fiftypadding {
+    height: 50px;
+    width" 100%;
 }
 
 /* ******************************************* */
