@@ -5,7 +5,6 @@
     <list default="true" id="547773d2-eea0-4976-88e5-936695eb962f" name="Default" comment="" />
 =======
     <list default="true" id="547773d2-eea0-4976-88e5-936695eb962f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header_include.php" afterPath="$PROJECT_DIR$/header_include.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
 >>>>>>> a88171b6c83d9cc1c446379e6b9c716527269f0b
@@ -350,7 +349,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428736395428</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="changed the file and header includes&#10;">
+      <created>1428736503912</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1428736503912</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
