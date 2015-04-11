@@ -46,7 +46,6 @@ foreach($all_posts as $key => $thread) {
 
             <div class="description <?php echo ($img) ? 'img_present' : ''; ?>">
                 <span class="title"><?php echo $thread['title']; ?></span> &nbsp;
-                <span class="location"><?php echo $thread['created_lat']; ?></span>
 
                 <span class="clear"></span>
 
