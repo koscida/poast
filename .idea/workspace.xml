@@ -30,8 +30,13 @@
       <file leaf-file-name="header_include.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/header_include.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.14285715" vertical-offset="0" max-vertical-offset="357">
               <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+=======
+            <state vertical-scroll-proportion="0.14782609" vertical-offset="0" max-vertical-offset="345">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+>>>>>>> 00ad1b4016e1d582fad7f3a72701bd9e343d6701
               <folding />
             </state>
           </provider>
@@ -229,6 +234,7 @@
       <option name="project" value="LOCAL" />
       <updated>1428737555962</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00009" summary="commit 10">
       <created>1428737691600</created>
       <option name="number" value="00009" />
@@ -242,6 +248,27 @@
       <updated>1428737720904</updated>
     </task>
     <option name="localTasksCounter" value="11" />
+=======
+    <task id="LOCAL-00009" summary="changed the file and header includes&#10;">
+      <created>1428737578799</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1428737578799</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed the file and header includes&#10;">
+      <created>1428737595559</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1428737595559</updated>
+    </task>
+    <task id="LOCAL-00011" summary="changed the file and header includes&#10;">
+      <created>1428737622579</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1428737622579</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+>>>>>>> 00ad1b4016e1d582fad7f3a72701bd9e343d6701
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -483,8 +510,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/header_include.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.14285715" vertical-offset="0" max-vertical-offset="357">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+=======
+        <state vertical-scroll-proportion="0.14782609" vertical-offset="0" max-vertical-offset="345">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+>>>>>>> 00ad1b4016e1d582fad7f3a72701bd9e343d6701
           <folding />
         </state>
       </provider>
