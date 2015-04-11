@@ -6,12 +6,10 @@
 /* ******************************** */
 /*              Layout              */
 /* ******************************** */
-html, body {
+html {
     font-size: 16px;
     line-height: 1.5em;
     background-color: #FEFDFB;
-    background-color: #E6E6E6;
-    font-family: Montserrat, helvetica, arial, sans-serif;
 }
 
 
@@ -73,13 +71,13 @@ background: linear-gradient(#30ADBF, #1693A5);
     -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
     background: linear-gradient(#30ADBF, #1693A5);*/
     padding: 4px 14px;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 0;
     color: #30ADBF;
-    background: #FEFDFB;
+    background: linear-gradient(#FEFDFB, #EEEDEB);
 }
 
-.new-thread-button:hover, .new-thread-button:focus {
+.new-thread-button:hover{
     /*padding: 2px 10px;
     height: 25px;
     width: auto;
@@ -95,15 +93,10 @@ background: linear-gradient(#30ADBF, #1693A5);
     border-radius: 8px;
     -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
     text-decoration: none;*/
-    background: #E6E6E6;
-
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    background: linear-gradient(#EEEDEB, #FEFDFB);
 }
 
-/*.new-thread-button:focus{
+.new-thread-button:focus{
     /*padding: 2px 10px;
     height: 25px;
     width: auto;
@@ -118,8 +111,9 @@ background: linear-gradient(#30ADBF, #1693A5);
     border-width: 2px;
     border-radius: 8px;
     -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
-    text-decoration: none;
-}*/
+    text-decoration: none;*/
+    background: linear-gradient(#EEEDEB, #FEFDFB);
+}
 
 /* *************************************** */
 /*    new thread page styling              */
@@ -148,31 +142,10 @@ h1.subtitle {
 
 
 /* ******************************************* */
-/*              Threads - General              */
-/* ******************************************* */
-.threads_header {
-    background: #30ADBF;
-    padding: 10px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    color: white;
-    font-size: 1.5em;
-}
-
-
-/* **************************************** */
-/*              Static Threads              */
-/* **************************************** */
-
-
-
-/* ******************************************* */
 /*              Generated Threads              */
 /* ******************************************* */
 .thread {
     border-bottom: 1px solid #1693A5;
-    padding: 10px;
-    background: white;
 }
 .score {
     text-algn: center;
