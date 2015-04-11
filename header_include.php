@@ -2,9 +2,10 @@
 <header class="header-container">
     <div class="header">
 
-        <p class="logo"> poast.io</p>
+        <a href="/new_thread.php" class="new-thread-button"
+           title="create a thread">create a thread</a>
 
-        <a href="https://buffalobookexchange.com/oc-panel/auth/register" class="new-thread-button" data-original-title="" title="">SIGN UP</a>
+        <p class="logo"> poast.io</p>
 
     </div>
 </header>
