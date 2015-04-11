@@ -28,7 +28,11 @@
       <file leaf-file-name="header_include.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/header_include.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.11943794" vertical-offset="0" max-vertical-offset="427">
+=======
+            <state vertical-scroll-proportion="0.14782609" vertical-offset="0" max-vertical-offset="345">
+>>>>>>> origin/master
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
@@ -221,31 +225,7 @@
       <option name="project" value="LOCAL" />
       <updated>1428736068331</updated>
     </task>
-    <task id="LOCAL-00008" summary="changed the file and header includes&#10;">
-      <created>1428737555962</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1428737555962</updated>
-    </task>
-    <task id="LOCAL-00009" summary="changed the file and header includes&#10;">
-      <created>1428737578799</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1428737578799</updated>
-    </task>
-    <task id="LOCAL-00010" summary="changed the file and header includes&#10;">
-      <created>1428737595559</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1428737595559</updated>
-    </task>
-    <task id="LOCAL-00011" summary="changed the file and header includes&#10;">
-      <created>1428737622579</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1428737622579</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -302,6 +282,7 @@
     <entry file="file://$PROJECT_DIR$/header_include.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+<<<<<<< HEAD
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -310,6 +291,8 @@
     <entry file="file://$PROJECT_DIR$/header_include.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+=======
+>>>>>>> origin/master
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -428,13 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/1140.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96870345" vertical-offset="2988" max-vertical-offset="3740">
-          <caret line="214" column="42" selection-start-line="214" selection-start-column="42" selection-end-line="214" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030195381" vertical-offset="0" max-vertical-offset="563">
@@ -470,14 +446,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/css/1140.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.8156425" vertical-offset="2988" max-vertical-offset="3740">
+          <caret line="214" column="42" selection-start-line="214" selection-start-column="42" selection-end-line="214" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="371">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -486,7 +463,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/header_include.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.11943794" vertical-offset="0" max-vertical-offset="427">
+=======
+        <state vertical-scroll-proportion="0.14782609" vertical-offset="0" max-vertical-offset="345">
+>>>>>>> origin/master
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
