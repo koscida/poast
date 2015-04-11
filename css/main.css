@@ -160,6 +160,7 @@ h1.subtitle {
     padding-left: 20px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #333333;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.25);
 }
 
 .new-thread-title-field {
