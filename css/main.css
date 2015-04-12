@@ -425,6 +425,9 @@ span.column11.text {
 /* ************************************* */
 /*              View Thread              */
 /* ************************************* */
+.thread_view2 {
+    margin-top: 100px;
+}
 .thread_view_image {
     background: rgba(0, 0, 0, .7);
     padding: 20px 25px 20px 20px;
@@ -436,7 +439,6 @@ span.column11.text {
 }
 .thread_view_image + .thread_view_content {
     margin-left: -5px;
-    margin-top: 100px;
 }
 
 .thread_view_image .image {

@@ -50,7 +50,7 @@
 
     <?php include "header_include.php" ?>
 
-    <section id="thread_view" class="container12">
+    <section id="thread_view" class="container12 thread_view2">
 
         <?php
         // if there is an image, create the image div to the left
