@@ -17,12 +17,13 @@ $long = (array_key_exists('long', $_GET)) ? $_GET['long'] : -105.2629666;
 //echo json_encode("lat: " . $lat . "<br/>long: " . $long);
 //die();
 
+$loc = (array_key_exists("loc", $_GET)) ? $_GET['loc'] : 0.001;
 
-$lat_min = $lat - 0.001;
-$lat_max = $lat + 0.001;
+$lat_min = $lat - $loc;
+$lat_max = $lat + $loc;
 
-$long_min = $long - 0.001;
-$long_max = $long + 0.001;
+$long_min = $long - $loc;
+$long_max = $long + $loc;
 
 
 

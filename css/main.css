@@ -55,9 +55,10 @@ a {
 }
 
 .input_wrapper {
-    overflow: hidden;
+   /* overflow: hidden; */
     width: 100%;
     margin-bottom: 10px;
+    display: inline-block;
 }
 .input_wrapper label {
     width: 100%;
@@ -129,6 +130,18 @@ input[type="text"], .textarea{
     padding: 20px;
     overflow: hidden;
 }
+
+.new-thread-button {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 4px 14px;
+    border-radius: 5px;
+    color: #1693A5;
+    background: #e9eaed;
+    border: 1px solid #30ADBF;
+}
+
 .radius-selector{
     width: 120px;
     font-size: 14px;
@@ -244,10 +257,13 @@ input[type="text"], .textarea{
     background: linear-gradient(#3AB7C9, #1693A5);
     /* border-color: #98B210; */
     border-radius: 0;
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 -2px 5px rgba(0,0,0,.25);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 /* **************************************** */

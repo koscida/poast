@@ -73,6 +73,6 @@
             }
         });
     </script>
-
+    <?php include "footer_include.php" ?>
 </body>
 </html>

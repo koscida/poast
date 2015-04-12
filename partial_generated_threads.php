@@ -1,21 +1,29 @@
 <script type="text/javascript">
     $("document").ready(function(){
 
-        prep_ajax();
+        //prep_ajax();
+        $("#local").click(function(){
+            prep_ajax(0.003);
+        });
+        $("#hyper").click(function(){
+            prep_ajax(0.001);
+        });
 
-        function prep_ajax() {
+        function prep_ajax(loc) {
             if ("geolocation" in navigator) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    do_ajax(position.coords.latitude, position.coords.longitude);
+                navigator.geolocation.getCurrentPosition(function (position, loc) {
+                    do_ajax(position.coords.latitude, position.coords.longitude, loc);
                 });
             } else { }
         }
 
 
-        function do_ajax(lat, long) {
+        function do_ajax(lat, long, loc) {
+            console.log("in do ajax");
             var data = {
                 lat: lat,
-                long: long
+                long: long,
+                loc: loc
             };
             $.ajax({
                 type: "GET",
@@ -23,7 +31,7 @@
                 url: "ajax_get_local_poasts.php", //Relative or absolute path to response.php file
                 data: data,
                 success: function(response) {
-                    console.log(response);
+                    //console.log(response);
                     $("#gen_posts").html(response);
                     console.log("success");
                 }
@@ -32,12 +40,13 @@
     });
 </script>
 
-
-<div id="return"></div>
-
+<div id="h" style="display: none">0</div>
 
 <div class="threads_header column12 outer">
     <p>Local Toasts: <span>Boulder</span></p>
+
+    <button id="hyper" class="button right">Hyper Local</button>
+    <button id="local" class="button right">Local</button>
 </div>
 
 <div class="threads_content column12 outer">

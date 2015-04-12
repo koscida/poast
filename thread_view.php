@@ -285,7 +285,13 @@
             $i.css(styles);
         });
     </script>
-
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
     <?php include "footer_include.php" ?>
 </body>
 </html>
