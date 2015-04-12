@@ -170,6 +170,7 @@
     </section>
     <div class="fiftypadding"></div>
     <div class="fiftypadding"></div>
+    <div class="thirtypadding"></div>
     <?php include "footer_include.php" ?>
 </body>
 </html>
