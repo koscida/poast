@@ -337,6 +337,16 @@ h1.subtitle {
 /* ******************************************* */
 /*              Generated Threads              */
 /* ******************************************* */
+#gen_posts {
+    background: white;
+    width: 100%;
+    min-height: 200px;
+ }
+    #gen_posts img {
+        width: 200px;
+        margin: 10px auto;
+        display: block;
+    }
 .single_thread {
     border-bottom: 1px solid #99C9D0;
     background: white;
@@ -373,7 +383,7 @@ h1.subtitle {
     }
 .single_thread .description {
     width: 100%;
-    padding-right: 30px;
+    padding-right: 60px;
     display: block;
 
     box-sizing: border-box;
@@ -402,7 +412,7 @@ h1.subtitle {
 .single_thread .score {
     position: absolute;
     text-align: center;
-    width: 30px;
+    width: 55px;
     top: 10px;
     right: 5px;
 }

@@ -1,82 +1,53 @@
-<?php
-
-// get the database
-$db;
-$db_obj = new database();
-$db = $db_obj->get_db();
+<form style="display: none;" id="ajax_form">
+    <input type="hidden" name="lat" id="lat"/>
+    <input type="hiddem" name="long" id="long"/>
+</form>
 
 
-// create variable to store all the posts
-$all_posts = array();
+<script type="text/javascript">
+    $("document").ready(function(){
 
-// get data from db
-$result = $db->query("SELECT * FROM threads");
+        //setInterval(prep_ajax, 120000);
+        prep_ajax();
 
-// loop through fetched data
-while ($row = $result->fetch_assoc()) {
-    $all_posts[] = $row;
-}
-$result->free();
+        function prep_ajax() {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    $("#lat").val(position.coords.latitude);
+                    $("#long").val(position.coords.longitude);
+                });
+                do_ajax();
+            } else { }
+        }
 
-// test to make sure the db data was pulled correctly
-//echo '<pre>' . print_r($all_posts, true) . '</pre>';
 
-?>
+        function do_ajax() {
+            var data = {};
+            data = $("#ajax_form").serialize() + "&" + $.param(data);
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "ajax_get_local_poasts.php", //Relative or absolute path to response.php file
+                data: data,
+                success: function(response) {
+                    //console.log(response);
+                    $("#gen_posts").html(response);
+                    console.log("success");
+                }
+            });
+        }
+    });
+</script>
+
+
+<div id="return"></div>
+
 
 <div class="threads_header column12 outer">
-    <p>Current Location: <span>Boulder</span></p>
+    <p>Local Toasts: <span>Boulder</span></p>
 </div>
 
-<?php
-foreach($all_posts as $key => $thread) {
-?>
-    <div class="single_thread column12 outer">
-        <a class="thread_link" href="thread_view.php?id=<?php echo $thread['id']; ?>">
-
-            <?php
-            $img = false;
-            if(!empty($thread['image_path'])) {
-                $img = true;
-                ?>
-                <div class="image">
-                    <img src="<?php echo $thread['image_path']; ?>" />
-                </div>
-            <?php }  ?>
-
-
-            <div class="description <?php echo ($img) ? 'img_present' : ''; ?>">
-                <span class="title"><?php echo $thread['title']; ?></span> &nbsp;
-                <span class="location"><?php echo $thread['created_lat']; ?></span>
-
-                <span class="clear"></span>
-
-                <span class="text">
-                    <?php
-                        if(strlen($thread['text']) > 150)
-                            $s = substr($thread['text'], 0, 150) . "...";
-                        else
-                            $s = $thread['text'];
-                    echo $s; ?>
-                </span>
-
-                <span class="clear"></span>
-
-                <span class="date"><?php echo time_ago($thread['create_date']); ?></span>
-
-                <span class="score">
-                    <span class="score_toasts"></span>
-                    <span class="score_num"><?php echo ($thread['num_toasts'] - $thread['num_roasts']); ?></span>
-                    <span class="score_roasts"></span>
-                </span>
-            </div>
-
-        </a>
-    </div>
-
-
-<?php
-}
-?>
+<div id="gen_posts"><img src="images/loading_spinner.gif" /></div>
 
 
 <div class="threads_load_more">

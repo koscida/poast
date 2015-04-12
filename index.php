@@ -17,7 +17,7 @@
         </div>
 
         <div class="column9">
-            <div id="static_thread">
+            <div id="static_thread" style="display: none;">
                 <?php include "partial_static_thread.php" ?>
             </div>
             <div id="generated_thread">

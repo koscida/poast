@@ -6,11 +6,23 @@ $db_obj = new database();
 $db = $db_obj->get_db();
 
 
+$lat = 39.9386725;
+$lat_min = $lat - 0.1;
+$lat_max = $lat + 0.1;
+
+$long = -105.1433931;
+$long_min = $long - 0.1;
+$long_max = $long + 0.1;
+
+
 // create variable to store all the posts
 $all_posts = array();
 
 // get data from db
-$result = $db->query("SELECT * FROM threads");
+//$result = $db->query("SELECT * FROM threads");
+$result = $db->query("SELECT * FROM threads
+                      WHERE created_lat >= $lat_min AND created_lat <= $lat_max
+                      AND created_long >= $long_min AND created_long <= $long_max");
 
 // loop through fetched data
 while ($row = $result->fetch_assoc()) {
@@ -24,7 +36,7 @@ $result->free();
 ?>
 
 <div class="threads_header column12 outer">
-    <p>Current Location: <span>Boulder</span></p>
+    <p>Breakfast Toasts: <span>Superior</span></p>
 </div>
 
 <?php
