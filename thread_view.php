@@ -168,6 +168,8 @@
         </div>
         
     </section>
-
+    <div class="fiftypadding"></div>
+    <div class="fiftypadding"></div>
+    <?php include "footer_include.php" ?>
 </body>
 </html>
