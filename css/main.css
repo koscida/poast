@@ -221,20 +221,6 @@ h1.subtitle {
     height: 30px;
     width: 100%;
 }
-
-.fiftypadding {
-    height: 50px;
-    width: 100%;
-}
-
-.staticfeed {
-    float: right;
-}
-
-.dynamicfeed{
-    float: right;
-}
-
 .profilepane {
     height-min: 100px;
     background-color: white;
@@ -359,9 +345,9 @@ h1.subtitle {
         height: 80px;
     }
 .single_thread .description {
-    float: left;
-    display: inline-block;
     width: 100%;
+    padding-right: 30px;
+    display: block;
 
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -387,12 +373,15 @@ h1.subtitle {
     font-style: italic;
 }
 .single_thread .score {
-    float: right;
+    position: absolute;
     text-align: center;
-    height: 20px;
+    width: 30px;
+    top: 10px;
+    right: 5px;
 }
 .score_toasts, .score_roasts, .score_num {
     display: block;
+    margin: 0 auto;
 }
 .score_toasts, .score_roasts {
     width: 20px;

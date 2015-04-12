@@ -9,22 +9,27 @@
 <body>
 
     <?php include "header_include.php" ?>
+
     <section id="home" class="container12">
-        <div class="thirtypadding"></div>
-        <div class="column3 home-profile-module" id="profile">
+
+        <div class="column3" id="profile">
             <?php include "home_profile_module.php" ?>
         </div>
-        <div class="column9 staticfeed" id="static_thread">
-            <?php include "partial_static_thread.php" ?>
-        </div>
-        <br>
-        <div class="column9 dynamicfeed" id="generated_thread">
-            <?php include "partial_generated_threads.php" ?>
-        </div>
+
+        <div class="column9">
+            <div id="static_thread">
+                <?php include "partial_static_thread.php" ?>
+            </div>
+            <div id="generated_thread">
+                <?php include "partial_generated_threads.php" ?>
+            </div>
+        <div>
+
+
 
     </section>
-    <div class="fiftypadding"></div>
-    <div class="fiftypadding"></div>
+
     <?php include "footer_include.php" ?>
+
 </body>
 </html>

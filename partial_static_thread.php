@@ -45,35 +45,29 @@ foreach($all_posts as $key => $thread) {
 
 
             <div class="description <?php echo ($img) ? 'img_present' : ''; ?>">
-                <span class="title"><?php echo $thread['title']; ?></span> &nbsp;
+                <span class="title"><?php echo $thread['title']; ?></span>
 
                 <span class="clear"></span>
 
-                <span class="column11 text">
+                <span class="text">
                     <?php
                     if(strlen($thread['text']) > 150)
                         $s = substr($thread['text'], 0, 150) . "...";
                     else
                         $s = $thread['text'];
                     echo $s; ?>
-                    &nbsp;
                 </span>
-
-                <div class="column1 inner">
-                    <div class="view_score">
-                        <span class="score_toasts"></span>
-                        <span class="score_num"><?php echo ($thread['num_toasts'] - $thread['num_roasts']); ?></span>
-                        <span class="score_roasts"></span>
-                    </div>
-                </div>
 
                 <span class="clear"></span>
 
-
                 <span class="date"><?php echo time_ago($thread['create_date']); ?></span>
-
-
             </div>
+
+            <span class="score">
+                <span class="score_toasts"></span>
+                <span class="score_num"><?php echo ($thread['num_toasts'] - $thread['num_roasts']); ?></span>
+                <span class="score_roasts"></span>
+            </span>
 
         </a>
     </div>
