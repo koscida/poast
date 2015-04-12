@@ -1,3 +1,35 @@
+<?php
+    if(array_key_exists('submit', $_POST)) {
+        include"db.php";
+
+        // get db
+        $db;
+        $db_obj = new database();
+        $db = $db_obj->get_db();
+
+        // get vars
+        $thread_id = $_POST['post_id'];
+        $post_id = $_POST['post_id'];
+        $text = $_POST['text'];
+        $time = date('Y-m-d h:i:s', time());
+        $user_id = 1;
+
+        // prep insert
+        $sql = "INSERT INTO `posts` (`thread_id`, `post_reply_id`, `text`, `create_date`, `author_id`) VALUES (?, ?, ?, ?, ?)";
+        if( !($stmt = $db->prepare($sql)) ) { echo "Prepare failed: (" . $db->errno . ") " . $db->error; }
+
+        // bind vals to sql
+        if( !$stmt->bind_param("iissi", $thread_id, $post_id, $text, $time, $user_id) ) { echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error; }
+
+        // exe stmt
+        if( !$stmt->execute() ) { echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error; }
+        $stmt->close();
+
+        header('Location: '.$_SERVER['PHP_SELF']."?id=".$thread_id);
+        die;
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +39,11 @@
 
 
     <?php
+
+    // check for submit
+
+
+
     // get the php thread id
     $id = 0;
     if(array_key_exists("id", $_GET)) {
@@ -86,10 +123,22 @@
                     <div class="score_roasts"></div>
                 </div>
                 <div class="post_content">
+
                     <div class="post_text"><?php echo $p['text']; ?></div>
                     <span class="post_author"><?php echo $p['username']; ?></span>
-                    <span class="post_score"><?php echo $p['num_toasts'] - $p['num_roasts']; ?></span>
-                    <span class="post_reply"><a href="#">reply</a></span>
+                    <?php $s = $p['num_toasts'] - $p['num_roasts']; ?>
+                    <span class="post_score <?php echo (($s <= 0) ? "neg" : "pos");?>"><?php echo $s ?></span>
+                    <span class="post_reply"><a href="#" class="post_reply_button">reply</a></span>
+
+                    <form class="reply_form" method="post">
+                        <textarea class="textarea" name="text"></textarea>
+                        <input type="submit" class="button right post_submit_button" value="SUBMIT">
+                        <input type="hidden" name="post_id" value="<?php echo $p['id'];?>" />
+                        <input type="hidden" name="thread_id" value="<?php echo $_GET["id"];?>" />
+                        <input type="hidden" name="submit" value="1" />
+                        <input type="submit" class="button left post_cancel_button" value="CANCEL">
+                    </form>
+
                  </div>
         </div>
         <?php
@@ -179,6 +228,20 @@
                 $(this).next().slideToggle();
                 $(this).parent().removeClass("hidden");
             }
+        });
+
+        function cancel() {
+            console.log("in cancel");
+            $(this).remove;
+        }
+
+        $(".post_reply_button").click(function(event){
+            event.preventDefault();
+            $(this).parent().next().slideToggle();
+        });
+        $(".post_cancel_button").click(function(event){
+            event.preventDefault();
+            $(this).parent().slideToggle();
         });
     </script>
 

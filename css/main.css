@@ -28,8 +28,9 @@ a {
     text-decoration: none;
     padding: 4px 14px;
     border-radius: 5px;
-    color: #30ADBF;
-    background: #FEFDFB;
+    color: #1693A5;
+    background: #e9eaed;
+    border: 1px solid #E6E6E6;
 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -59,7 +60,7 @@ a {
     margin-bottom: 10px;
 }
 .input_wrapper label { width: 100%; text-transform: uppercase; }
-input[type="text"]{
+input[type="text"], .textarea{
     width: 100%;
     font-size: 18px;
     -webkit-border-radius: 5px;
@@ -225,11 +226,6 @@ h1.subtitle {
 }
 .fake-login {
     padding: 20px;
-}
-.fake-login .button{
-    color: #1693A5;
-    background: #e9eaed;
-    border: 1px solid #E6E6E6;
 }
 
 
@@ -477,12 +473,18 @@ span.column11.text {
     font-size: .9em;
     color: #777;
 }
-
 .post_author{
     font-size: .9em;
     color: #777;
+    margin-right: 5px;
 }
-
+.post_score {
+    margin-right: 5px;
+}
+    .post_score.neg { color: #c51633; }
+    .post_score.pos { color: #1693A5; }
+.post_reply_button { color: #777; }
+    .post_reply_button:hover { text-decoration: underline; }
 .view_thread .date {
     float: left;
 }
@@ -504,6 +506,7 @@ span.column11.text {
     }
 .single_post {
     overflow: hidden;
+    position: relative;
 }
 .expand_button {
     width: 15px;
@@ -515,20 +518,35 @@ span.column11.text {
 .expand_button:hover { cursor: pointer; }
 .expand_content {
     padding: 3px;
-    float: left;
-    display: inline-block;
-    border-left: 1px;
-    border-style: solid;
-    border-color: rgb(52, 177, 195);
-    margin-top: 8px;
+    border-left: 1px solid rgb(52, 177, 195);
+    margin: 8px 0 0 15px;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 .single_post .votes {
     width: 35px;
-    float: left;
+    position: absolute;
 }
 .single_post .post_content {
-    float: left;
+    margin-left: 40px;
 }
 
+/*  on the fly reply/post box (in the thread, add a post) */
+.reply_form {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #99C9D0;
+    overflow: hidden;
 
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.reply_form .textarea {
+    height: 100px;
+}
 
