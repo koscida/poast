@@ -13,11 +13,11 @@
     <section id="home" class="container12">
 
         <div class="column3" id="profile">
-            <?php include "home_profile_module.php" ?>
+            <?php include "partial_profile.php" ?>
         </div>
 
         <div class="column9">
-            <div id="static_thread" style="display: none;">
+            <div id="static_thread">
                 <?php include "partial_static_thread.php" ?>
             </div>
             <div id="generated_thread">
