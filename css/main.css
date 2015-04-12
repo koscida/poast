@@ -507,6 +507,8 @@ span.column11.text {
     width: 15px;
     float: left;
     display: inline-block;
+    padding-top: 8px;
+    font-weight: bold;
 }
 .expand_content {
     padding: 3px;
