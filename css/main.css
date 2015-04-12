@@ -278,6 +278,10 @@ h1.subtitle {
     padding-left: 20px;
     text-align: center;
 }
+
+.bottomlogo {
+    font-size: 14px;
+}
 .threads_load_more {
     background: #eee;
 }
@@ -287,6 +291,20 @@ h1.subtitle {
     display: block;
 }
 
+.footer.footer {
+    height: 22px;
+    width: 100%;
+    background: -webkit-linear-gradient(#4AC7D9, #1693A5);
+    background: -o-linear-gradient(#4AC7D9, #1693A5);
+    background: -moz-linear-gradient(#4AC7D9, #1693A5);
+    background: linear-gradient(#4AC7D9, #1693A5);
+    /* border-color: #98B210; */
+    border-radius: 0;
+    -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
 
 /* **************************************** */
 /*              Static Threads              */
@@ -388,6 +406,11 @@ h1.subtitle {
 span.column11.text {
     font-size: x-small;
     line-height: 1em;
+}
+
+.profile-table {
+    padding-left: 40px;
+    padding-top: 20px;
 }
 
 

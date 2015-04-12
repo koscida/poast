@@ -9,7 +9,7 @@
 <body>
 
     <?php include "header_include.php" ?>
-    <!-- <?php include "footer_include.php" ?> -->
+
 
     <section id="home" class="container12">
         <div class="thirtypadding"></div>
@@ -28,5 +28,6 @@
     <div class="fiftypadding"></div>
     <div class="fiftypadding"></div>
     <div class="fiftypadding"></div>
+    <?php include "footer_include.php" ?>
 </body>
 </html>

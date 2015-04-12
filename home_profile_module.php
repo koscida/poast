@@ -3,8 +3,21 @@
 </div>
 
 <div class=" column12 outer profilepane">
-    <p> Member Since: </p>
-    <p> Poasts: </p>
-    <p> Toasts: </p>
-    <p> Roasts: </p>
+    <table class="profile-table" border="1" style="width:75%">
+        <tr>
+            <td>POSTS</td>
+            <td>SWEG</td>
+        </tr>
+        <tr>
+            <td>TOASTS</td>
+            <td>420</td>
+        </tr>
+            <td>ROASTS</td>
+            <td>69</td>
+        </tr>
+        <tr>
+            <td>MEMBER SINCE:</td>
+            <td>yes</td>
+        </tr>
+    </table>
     </div>
