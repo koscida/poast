@@ -81,7 +81,7 @@
     function print_post($p) {
         ?>
         <div class="single_post">
-            <div class="expand_button active">+</div>
+            <div class="expand_button active">-</div>
             <div class="expand_content">
                 <div class="votes">
                     <div class="score_toasts"></div>
