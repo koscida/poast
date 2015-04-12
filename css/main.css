@@ -25,6 +25,10 @@ a {
 /* ******************************** */
 .header-container {
     height: 84px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
 }
 
 .header {
@@ -207,6 +211,11 @@ h1.subtitle {
 /* ******************************************* */
 /*              Home Index Page Styling        */
 /* ******************************************* */
+
+#home {
+    margin-top: 84px;
+    position: relative;
+}
 
 .thirtypadding {
     height: 30px;
