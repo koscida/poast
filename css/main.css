@@ -30,7 +30,7 @@ a {
     border-radius: 5px;
     color: #1693A5;
     background: #e9eaed;
-    border: 1px solid #E6E6E6;
+    border: 1px solid #30ADBF;
 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -39,8 +39,8 @@ a {
 }
 
 .button:hover, .button:focus {
-    background: #E6E6E6;
-
+    background: #D6d6d6;
+    cursor: pointer;
 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -59,7 +59,11 @@ a {
     width: 100%;
     margin-bottom: 10px;
 }
-.input_wrapper label { width: 100%; text-transform: uppercase; }
+.input_wrapper label {
+    width: 100%;
+    text-transform: uppercase;
+    display: block;
+}
 input[type="text"], .textarea{
     width: 100%;
     font-size: 18px;
@@ -122,42 +126,8 @@ input[type="text"], .textarea{
     margin-top: 84px;
 }
 .new-thread-box {
-    display: inline-block;
-}
-
-.new-thread-form {
-    padding: 30px 20px 20px;
-}
-h1.subtitle {
-    font-weight: 100;
-    font-size: 18px;
-}
-.new-thread-page-title {
-    font-size: 30px;
-    color: #333333;
-    font-weight: 900;
-    padding-top: 50px;
-    padding-left: 20px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #333333;
-    text-shadow: 1px 1px 5px rgba(0,0,0,.25);
-}
-
-.new-thread-title-field {
-    font-size: 18px;
-    padding: 8px 10px;
-    -webkit-border-radius: 5px;
-    border: 1px solid #1693A5;
-    background-color: #e9eaed;
-    width: 100%;
-    text-shadow: 1px 1px 5px rgba(0,0,0,.25);
-}
-
-.new-thread-create-button{
-    float: left;
-    margin-bottom: 20px;
-    border: 2px solid #30ADBF;
-    font-size: 14px;
+    padding: 20px;
+    overflow: hidden;
 }
 .radius-selector{
     width: 120px;
@@ -166,15 +136,6 @@ h1.subtitle {
     -webkit-border-radius: 5px;
     border: 1px solid #1693A5;
     background-color: #e9eaed;
-    font-family: 'Montserrat', sans-serif;
-}
-.new-thread-text-area{
-    font-size: 14px;
-    padding: 8px 10px;
-    -webkit-border-radius: 5px;
-    border: 1px solid #1693A5;
-    background-color: #e9eaed;
-    width: 100%;
     font-family: 'Montserrat', sans-serif;
 }
 .new-thread-image {
@@ -286,23 +247,6 @@ h1.subtitle {
     -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.25);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    text-align: center;
-}
-
-.new-thread-button {
-    font-size: 13px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 4px 14px;
-    border-radius: 5px;
-    color: #1693A5;
-    background: #e9eaed;
-    border: 1px solid #E6E6E6;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    display: block;
     text-align: center;
 }
 

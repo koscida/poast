@@ -28,6 +28,36 @@
         header('Location: '.$_SERVER['PHP_SELF']."?id=".$thread_id);
         die;
     }
+
+    if(array_key_exists("new", $_POST)) {
+        include"db.php";
+
+        // get db
+        $db;
+        $db_obj = new database();
+        $db = $db_obj->get_db();
+
+        // get vars
+        $author_id = 1;
+        $lat = floatval(empty($_POST['lat']) ? 0 : $_POST['lat']);
+        $long = (empty($_POST['long']) ? 0 : $_POST['long']);
+        $date = date('Y-m-d h:i:s', time());
+        $radius = (empty($_POST['radius']) ? 0 : $_POST['radius']);
+        $exp = 60;
+        $title = (empty($_POST['title']) ? 0 : $_POST['title']);
+        $text = (empty($_POST['text']) ? 0 : $_POST['text']);
+
+        $sql = "INSERT INTO `threads` (`author_id`, `created_lat`, `created_long`, `create_date`, `radius`, `expire_in_days`, `title`, `text`, `image_path`) VALUES ($author_id, $lat, $long, '$date', $radius, $exp, '$title', '$text', NULL)";
+        if( !($stmt = $db->prepare($sql)) ) { echo "Prepare failed: (" . $db->errno . ") " . $db->error; }
+
+        // exe stmt
+        if( !$stmt->execute() ) { echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error; }
+        $thread_id = $stmt->insert_id;
+        $stmt->close();
+
+        header('Location: '.$_SERVER['PHP_SELF']."?id=".$thread_id);
+        die();
+    }
 ?>
 
 <!DOCTYPE html>

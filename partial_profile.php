@@ -9,12 +9,12 @@
 
             <div class="input_wrapper">
                 <label for="">Username</label>
-                <input class="fake-login-text-field" type="text" name="Username" >
+                <input type="text" name="Username" >
             </div>
 
             <div class="input_wrapper">
                 <label for="">Password</label>
-                <input class="fake-login-text-field" type="text" name="Password">
+                <input type="text" name="Password">
             </div>
 
             <div class="input_wrapper">
