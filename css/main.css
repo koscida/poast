@@ -520,6 +520,7 @@ span.column11.text {
 .single_post .votes {
     width: 25px;
     float: left;
+    padding-left: 5px;
 }
 .single_post .post_content {
     float: left;
