@@ -43,7 +43,7 @@
                             <option value="3 miles">3 mile</option>
                             <option value="5 miles">5 miles</option>
                         </select>
-                        <br>
+ <br>                   <br>
                         <input class="new-thread-button new-thread-create-button" type="submit" value="create">
                     </form>
 
