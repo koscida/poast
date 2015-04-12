@@ -5,6 +5,8 @@
     <div class="profile_content">
 
         <form class="fake-login">
+
+
             <div class="input_wrapper">
                 <label for="">Username</label>
                 <input class="fake-login-text-field" type="text" name="Username" >
@@ -18,6 +20,10 @@
             <div class="input_wrapper">
                 <input class="button left" type="submit" value="Sign In">
                 <input class="button right" type="submit" value="Sign Up">
+            </div>
+
+            <div class="input_wrapper">
+                <a href="/poast/new_thread.php" class="new-thread-button">Create a Thread</a>
             </div>
         </form>
 
