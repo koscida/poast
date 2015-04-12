@@ -7,7 +7,7 @@
         <form class="fake-login">
             <div class="input_wrapper">
                 <label for="">Username</label>
-                <input class="fake-login-text-field" type="text" name="Username" placeholder="test">
+                <input class="fake-login-text-field" type="text" name="Username" >
             </div>
 
             <div class="input_wrapper">

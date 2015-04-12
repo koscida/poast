@@ -17,12 +17,19 @@
         </div>
 
         <div class="column9">
+
             <div id="static_thread">
                 <?php include "partial_static_thread.php" ?>
             </div>
+
+            <div class="spacer"></div>
+
             <div id="generated_thread">
                 <?php include "partial_generated_threads.php" ?>
             </div>
+
+            <div class="spacer"></div>
+
         <div>
 
 

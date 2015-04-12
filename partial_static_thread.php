@@ -39,6 +39,7 @@ $result->free();
     <p>Breakfast Toasts: <span>Superior</span></p>
 </div>
 
+<div class="threads_content column12 outer">
 <?php
 foreach($all_posts as $key => $thread) {
     ?>
@@ -89,9 +90,12 @@ foreach($all_posts as $key => $thread) {
 }
 ?>
 
+    <div class="threads_load_more">
+        <img class="load" src="images/load_dots.png">
 
-<div class="threads_load_more">
-    <img class="load" src="images/load_dots.png">
+    </div>
 
 </div>
+
+
 

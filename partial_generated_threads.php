@@ -40,7 +40,8 @@
     <p>Local Toasts: <span>Boulder</span></p>
 </div>
 
-<div id="gen_posts"><img src="images/loading_spinner.gif" /></div>
+<div class="threads_content column12 outer">
+    <div id="gen_posts" ><img src="images/loading_spinner.gif" /></div>
 
 
 <div class="threads_load_more">
@@ -48,3 +49,4 @@
 
 </div>
 
+</div>

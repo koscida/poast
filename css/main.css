@@ -21,6 +21,7 @@ a {
 }
 .left { float: left; }
 .right { float: right; }
+.spacer { height: 20px; clear: both; }
 .button {
     font-size: 13px;
     text-transform: uppercase;
@@ -57,7 +58,7 @@ a {
     width: 100%;
     margin-bottom: 10px;
 }
-.input_wrapper label { width: 100%; }
+.input_wrapper label { width: 100%; text-transform: uppercase; }
 input[type="text"]{
     width: 100%;
     font-size: 18px;
@@ -200,6 +201,7 @@ h1.subtitle {
     background-color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.25);
 }
 
 .profile_header {
@@ -234,6 +236,9 @@ h1.subtitle {
 /* ******************************************* */
 /*              Threads - General              */
 /* ******************************************* */
+#static_thread, #generated_thread {
+    margin-bottom: 20px;
+}
 .threads_header {
     background: #30ADBF;
     padding: 10px;
@@ -256,16 +261,20 @@ h1.subtitle {
     padding-left: 20px;
     text-align: center;
 }
+.threads_content {
+    display: block;
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.25);
+}
 
 .bottomlogo {
     font-size: 14px;
 }
 .threads_load_more {
+    display: none;
     background: #eee;
 }
 .threads_load_more .load {
     width: 80px;
-    margin: 10px auto;
     display: block;
 }
 
@@ -296,7 +305,6 @@ h1.subtitle {
 #gen_posts {
     background: white;
     width: 100%;
-    min-height: 200px;
  }
     #gen_posts img {
         width: 200px;
