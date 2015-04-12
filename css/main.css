@@ -385,6 +385,11 @@ h1.subtitle {
     background-size: 20px 20px;
 }
 
+span.column11.text {
+    font-size: x-small;
+    line-height: 1em;
+}
+
 
 /* ************************************* */
 /*              View Thread              */
