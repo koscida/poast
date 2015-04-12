@@ -218,10 +218,11 @@ h1.subtitle {
     margin-top: 84px;
     position: relative;
 }
-
-.thirtypadding {
-    height: 30px;
-    width: 100%;
+#profile_inner {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
 }
 .profilepane {
     height-min: 100px;
@@ -415,7 +416,7 @@ h1.subtitle {
     background-repeat: no-repeat;
 }
 .score_num {
-    margin: 0 10px;
+    margin: 0;
     line-height: 20px;
 }
 .score_toasts {
@@ -530,6 +531,8 @@ span.column11.text {
     width: 15px;
     float: left;
     display: inline-block;
+    padding-top: 8px;
+    font-weight: bold;
 }
 .expand_content {
     padding: 3px;
@@ -541,7 +544,7 @@ span.column11.text {
     margin-top: 8px;
 }
 .single_post .votes {
-    width: 25px;
+    width: 35px;
     float: left;
 }
 .single_post .post_content {
