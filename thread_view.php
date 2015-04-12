@@ -50,7 +50,7 @@
 
     <?php include "header_include.php" ?>
 
-    <section id="thread_view" class="container12 thread_view2">
+    <section id="thread_view" class="container12">
 
         <?php
         // if there is an image, create the image div to the left
@@ -62,7 +62,7 @@
         <?php
         }
         ?>
-        <div class="thread_view_content <?php echo ($img) ? 'column8 alpha' : 'column12';?>">
+        <div class="thread_view_content <?php echo ($img) ? 'column8 alpha' : 'column12';?> ">
 
             <div class="view_thread">
 

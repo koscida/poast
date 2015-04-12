@@ -428,6 +428,16 @@ span.column11.text {
 .thread_view2 {
     margin-top: 100px;
 }
+
+.thread-textbox {
+    width:60%;
+}
+
+.thread_view_content.column8.alpha {
+    width: 60%;
+    margin-left: 3%;
+}
+
 .thread_view_image {
     background: rgba(109, 86, 54, .8);
     padding: 10px 10px 4px 10px;
