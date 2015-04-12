@@ -218,10 +218,11 @@ h1.subtitle {
     margin-top: 84px;
     position: relative;
 }
-
-.thirtypadding {
-    height: 30px;
-    width: 100%;
+#profile_inner {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
 }
 .profilepane {
     height-min: 100px;

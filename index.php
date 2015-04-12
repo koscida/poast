@@ -31,5 +31,8 @@
 
     <?php include "footer_include.php" ?>
 
+    <script>
+    </script>
+
 </body>
 </html>
