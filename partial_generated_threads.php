@@ -1,36 +1,29 @@
-<form style="display: none;" id="ajax_form">
-    <input type="hidden" name="lat" id="lat"/>
-    <input type="hiddem" name="long" id="long"/>
-</form>
-
-
 <script type="text/javascript">
     $("document").ready(function(){
 
-        //setInterval(prep_ajax, 120000);
         prep_ajax();
 
         function prep_ajax() {
             if ("geolocation" in navigator) {
                 navigator.geolocation.getCurrentPosition(function (position) {
-                    $("#lat").val(position.coords.latitude);
-                    $("#long").val(position.coords.longitude);
+                    do_ajax(position.coords.latitude, position.coords.longitude);
                 });
-                do_ajax();
             } else { }
         }
 
 
-        function do_ajax() {
-            var data = {};
-            data = $("#ajax_form").serialize() + "&" + $.param(data);
+        function do_ajax(lat, long) {
+            var data = {
+                lat: lat,
+                long: long
+            };
             $.ajax({
-                type: "POST",
+                type: "GET",
                 dataType: "json",
                 url: "ajax_get_local_poasts.php", //Relative or absolute path to response.php file
                 data: data,
                 success: function(response) {
-                    //console.log(response);
+                    console.log(response);
                     $("#gen_posts").html(response);
                     console.log("success");
                 }

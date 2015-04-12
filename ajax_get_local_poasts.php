@@ -8,19 +8,23 @@ $db;
 $db_obj = new database();
 $db = $db_obj->get_db();
 
-/*
-$lat = $_POST['lat'];
-$long = $_POST['long'];
-*/
-//if(!isset($lat))
-    $lat = 40.0018336;
-$lat_min = $lat - 0.01;
-$lat_max = $lat + 0.01;
 
-//if(!isset($long))
-    $long = -105.2629518;
-$long_min = $long - 0.01;
-$long_max = $long + 0.01;
+
+
+$lat = (array_key_exists('lat', $_GET)) ? $_GET['lat'] : 40.0018666;
+$long = (array_key_exists('long', $_GET)) ? $_GET['long'] : -105.2629666;
+
+//echo json_encode("lat: " . $lat . "<br/>long: " . $long);
+//die();
+
+
+$lat_min = $lat - 0.001;
+$lat_max = $lat + 0.001;
+
+$long_min = $long - 0.001;
+$long_max = $long + 0.001;
+
+
 
 
 // create variable to store all the posts
