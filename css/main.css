@@ -495,9 +495,13 @@ span.column11.text {
 }
 
 .post_group {
-    margin-left: 30px;
+    overflow: hidden;
 }
-.post_group:first-child { margin-left: 0; }
+    .post_group .post_group { margin-left: 30px; }
+    .post_group.hidden {
+        border-bottom: 1px solid rgb(52, 177, 195);
+        margin-bottom: 5px;
+    }
 .single_post {
     overflow: hidden;
 }
@@ -508,6 +512,7 @@ span.column11.text {
     padding-top: 8px;
     font-weight: bold;
 }
+.expand_button:hover { cursor: pointer; }
 .expand_content {
     padding: 3px;
     float: left;

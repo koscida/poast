@@ -81,8 +81,6 @@
     function print_post($p) {
         ?>
         <div class="single_post">
-            <div class="expand_button active">-</div>
-            <div class="expand_content">
                 <div class="votes">
                     <div class="score_toasts"></div>
                     <div class="score_roasts"></div>
@@ -93,19 +91,18 @@
                     <span class="post_score"><?php echo $p['num_toasts'] - $p['num_roasts']; ?></span>
                     <span class="post_reply"><a href="#">reply</a></span>
                  </div>
-            </div>
         </div>
         <?php
     }
 
     function recursive_print_posts($post, $replies) {
-        echo '<div class="post_group">';
+        echo '<div class="post_group"><div class="expand_button active">-</div><div class="expand_content">';
         print_post($post);
         if(!empty($replies)) {
             foreach($replies as $k => $p)
                 recursive_print_posts($p['post'], $p['replies']);
         }
-        echo '</div>';
+        echo '</div></div>';
     }
 
 
@@ -168,9 +165,23 @@
         </div>
         
     </section>
-    <div class="fiftypadding"></div>
-    <div class="fiftypadding"></div>
-    <div class="thirtypadding"></div>
+
+    <script>
+        $(".expand_button").click(function(){
+            // expanded
+            if($(this).hasClass("active")) {
+                $(this).removeClass("active").text("+");
+                $(this).next().slideToggle();
+                $(this).parent().addClass("hidden");
+            // not expanded
+            } else {
+                $(this).addClass("active").text("-");
+                $(this).next().slideToggle();
+                $(this).parent().removeClass("hidden");
+            }
+        });
+    </script>
+
     <?php include "footer_include.php" ?>
 </body>
 </html>
