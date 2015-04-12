@@ -392,7 +392,7 @@ h1.subtitle {
     height: 20px;
 }
 .score_toasts, .score_roasts, .score_num {
-    display: inline-block;
+    display: block;
 }
 .score_toasts, .score_roasts {
     width: 20px;
@@ -425,8 +425,8 @@ span.column11.text {
 /* ************************************* */
 /*              View Thread              */
 /* ************************************* */
-.thread_view2 {
-    margin-top: 100px;
+#thread_view {
+    margin-top: 84px;
 }
 
 .thread-textbox {
@@ -439,16 +439,18 @@ span.column11.text {
 }
 
 .thread_view_image {
-    background: rgba(109, 86, 54, .8);
-    padding: 10px 10px 4px 10px;
-    border-radius: 7px;
+    background: rgba(109, 86, 54, 1);
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .thread_view_content {
     background: white;
     border-radius: 5px;
 }
 .thread_view_image + .thread_view_content {
-    margin-left: -5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .thread_view_image .image {
@@ -457,7 +459,6 @@ span.column11.text {
 
 .view_thread {
     background: white;
-    border-radius: 5px;
     padding: 20px;
     overflow: hidden;
     border-bottom: 1px solid #99C9D0;
@@ -503,11 +504,33 @@ span.column11.text {
     float: right;
 }
 
+.posts {
+    margin: 20px;
+}
 
-
-
-
-
+.post_group {
+    margin-left: 30px;
+}
+.post_group:first-child { margin-left: 0; }
+.single_post {
+    overflow: hidden;
+}
+.expand_button {
+    width: 15px;
+    float: left;
+    display: inline-block;
+}
+.expand_content {
+    float: left;
+    display: inline-block;
+}
+.single_post .votes {
+    width: 25px;
+    float: left;
+}
+.single_post .post_content {
+    float: left;
+}
 
 
 
