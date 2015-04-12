@@ -521,8 +521,13 @@ span.column11.text {
     display: inline-block;
 }
 .expand_content {
+    padding: 3px;
     float: left;
     display: inline-block;
+    border-left: 1px;
+    border-style: solid;
+    border-color: rgb(52, 177, 195);
+    padding-top: 8px;
 }
 .single_post .votes {
     width: 25px;
