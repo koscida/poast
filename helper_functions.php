@@ -59,7 +59,7 @@ function recursive_check_array($post, $org_posts) {
         $org_posts[$reply_id]['replies'][$post['id']] = array("post" => $post, "replies" => array());
         return array(true, $org_posts);
     } else {
-        reset($org_posts); 
+        reset($org_posts);
         //echo "count: " . count($org_posts) . "<br/>";
         for($i=0; $i<count($org_posts); $i++) {
             //echo "i: " . $i . "<br/>";

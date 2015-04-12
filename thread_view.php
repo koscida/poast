@@ -91,7 +91,7 @@
                     <div class="post_text"><?php echo $p['text']; ?></div>
                     <span class="post_author"><?php echo $p['username']; ?></span>
                     <span class="post_score"><?php echo $p['num_toasts'] - $p['num_roasts']; ?></span>
-                    <span class="post_reply"><a href="#">Reply</a></span>
+                    <span class="post_reply"><a href="#">reply</a></span>
                  </div>
             </div>
         </div>
@@ -168,6 +168,9 @@
         </div>
         
     </section>
-
+    <div class="fiftypadding"></div>
+    <div class="fiftypadding"></div>
+    <div class="thirtypadding"></div>
+    <?php include "footer_include.php" ?>
 </body>
 </html>

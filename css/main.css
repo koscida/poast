@@ -487,6 +487,12 @@ span.column11.text {
     font-size: .9em;
     color: #777;
 }
+
+.post_author{
+    font-size: .9em;
+    color: #777;
+}
+
 .view_thread .date {
     float: left;
 }
