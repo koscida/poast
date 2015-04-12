@@ -170,8 +170,11 @@
         // if there is an image, create the image div to the left
         if($img) {
         ?>
-            <div class="column4 thread_view_image omega">
-                <img src="<?php echo $thread['image_path']; ?>"/>
+            <div class="column4 omega">
+                <div class="thread_view_image">
+                    <img src="<?php echo $thread['image_path']; ?>"/>
+                </div>
+                <br/>
             </div>
         <?php
         }
@@ -216,32 +219,40 @@
     </section>
 
     <script>
-        $(".expand_button").click(function(){
-            // expanded
-            if($(this).hasClass("active")) {
-                $(this).removeClass("active").text("+");
-                $(this).next().slideToggle();
-                $(this).parent().addClass("hidden");
-            // not expanded
-            } else {
-                $(this).addClass("active").text("-");
-                $(this).next().slideToggle();
-                $(this).parent().removeClass("hidden");
-            }
-        });
+        $(document).ready(function(){
+            $(".expand_button").click(function(){
+                // expanded
+                if($(this).hasClass("active")) {
+                    $(this).removeClass("active").text("+");
+                    $(this).next().slideToggle();
+                    $(this).parent().addClass("hidden");
+                // not expanded
+                } else {
+                    $(this).addClass("active").text("-");
+                    $(this).next().slideToggle();
+                    $(this).parent().removeClass("hidden");
+                }
+            });
 
-        function cancel() {
-            console.log("in cancel");
-            $(this).remove;
-        }
+            $(".post_reply_button").click(function(event){
+                event.preventDefault();
+                $(this).parent().next().slideToggle();
+            });
+            $(".post_cancel_button").click(function(event){
+                event.preventDefault();
+                $(this).parent().slideToggle();
+            });
 
-        $(".post_reply_button").click(function(event){
-            event.preventDefault();
-            $(this).parent().next().slideToggle();
-        });
-        $(".post_cancel_button").click(function(event){
-            event.preventDefault();
-            $(this).parent().slideToggle();
+            var $i = $(".thread_view_image")
+            var o = $i.offset();
+            var w = $i.width();
+            var styles = {
+                top : o.top,
+                left: o.left,
+                position: "fixed",
+                width: w
+            };
+            $i.css(styles);
         });
     </script>
 
