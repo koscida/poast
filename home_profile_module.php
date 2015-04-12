@@ -3,5 +3,8 @@
 </div>
 
 <div class=" column12 outer profilepane">
-    <p> test</p>
+    <p> Member Since: </p>
+    <p> Poasts: </p>
+    <p> Toasts: </p>
+    <p> Roasts: </p>
     </div>
